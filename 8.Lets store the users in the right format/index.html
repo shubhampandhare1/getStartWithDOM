@@ -1,0 +1,17 @@
+<script>
+    let myObj = {
+    name: 'Shubham',
+    age: 25
+};
+
+let myObj_serialiazed = JSON.stringify(myObj);
+
+localStorage.setItem('myObj',myObj_serialiazed);
+console.log(localStorage);
+
+//Convert String back to object ==>
+let myObj_deserialized = JSON.parse(localStorage.getItem('myObj')); 
+
+console.log(myObj_deserialized);
+
+</script>
